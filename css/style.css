@@ -7,7 +7,7 @@ ul{
     list-style: none;
 }
 body{
-    background-color: rgb(114, 138, 173);
+    background-color: #728aad;
 }
 .content-head{
     width: 100%;
@@ -40,7 +40,7 @@ body{
 .menuSection:hover{
     color: #cedae6;
     cursor: pointer;
-    background-color: aqua;
+    background-color: #728aad;
     transition: .6s;
 }
 .menuSection a{
@@ -49,12 +49,51 @@ body{
 
 .head{
     height: 100vh;
-    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.507) 0%, rgba(251, 194, 235, 0.541) 100%),url(backphoto.jpg);
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.507) 0%, rgba(251, 194, 235, 0.541) 100%),url(../sources/backphoto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
+/*busqueda de pagina*/
+.sea{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    justify-content: center;
+}
+input{
+border: none;
+border-bottom: solid 1px #000;
+background-color: transparent;
+text-shadow: none;
+height: 30px;
+width: 200px;
+font-size: 17px;
+max-width: 60%;
+}
+input:focus{
+    outline: none;
+    font-size: 20px;
+    transition: 1s;
+    width: 300px;
+}
+button{
+    border: none;
+    border-radius: 5px;
+    background-color: #728aad;
+    width: 60px;
+    height: 30px;
+    margin-left: 10px;
+    color: #fff;
+}
+button:hover{
+    color: #000;
+    transition: .6s;
+    cursor: pointer;
+}
+
 .title{
     height: 100%;
     display: flex;
@@ -85,4 +124,9 @@ body{
 .lorem{
     padding-top: 30px;
     width: 45%;
+}
+iframe{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
